@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#wrapper {
+  height: 900px;
+  position: relative;
+}
+
+#iphone {
+  height: 100%;
+  width: auto;
+}
+#icons {
+  position: absolute;
+  top: 293px;
+  left: 146px;
+  width: 277px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 20px;
+}
+#icons a {
+  width: 55px;
+  display: grid;
+  justify-items: center;
+  overflow: hidden;
+}
+
+#icons a img {
+  width: 100%;
+}
+
+#icons a img#map-icon {
+  width: 82%;
+}
+
+#icons a img#canvas-icon {
+  width: 85%;
+  border-radius: 11px;
+}
+
+#widget {
+  position: absolute;
+  width: 150px;
+  left: 146px;
+  top: 133px;
+}
+/* #mail-icon {
+  top: 150px;
+  left: 160px;
+} */
