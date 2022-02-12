@@ -12,6 +12,7 @@ body {
   display: flex;
   transform-style: preserve-3d;
   animation: rotate 24s infinite linear;
+  font-size: 96px;
 }
 
 @keyframes rotate {
@@ -34,7 +35,6 @@ body {
   position: absolute;
   left: var(--left);
   content: "Hello World, it's a nice day!";
-  font-size: 96px;
   font-family: sans-serif;
   width: max-content;
   color: hsl(var(--hue), 75%, 75%);
