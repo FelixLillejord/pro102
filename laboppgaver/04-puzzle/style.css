@@ -1,0 +1,39 @@
+.gameBoard {
+  position: relative;
+}
+
+#piece1 {
+  width: 33%;
+}
+
+#piece2 {
+  width: 33%;
+}
+
+#piece3 {
+  width: 33%;
+}
+
+#piece4 {
+  width: 33%;
+}
+
+#piece5 {
+  width: 33%;
+}
+
+#piece6 {
+  width: 33%;
+}
+
+#piece7 {
+  width: 33%;
+}
+
+#piece8 {
+  width: 33%;
+}
+
+#piece9 {
+  width: 33%;
+}

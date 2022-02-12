@@ -1,0 +1,188 @@
+body {
+  background-color: black;
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  perspective: 500px;
+}
+
+.banner {
+  display: flex;
+}
+
+.panel {
+  --width: 20px;
+  position: relative;
+  width: var(--width);
+  height: 100px;
+  overflow: hidden;
+  animation: rotate 6s var(--delay) infinite ease-in-out alternate;
+}
+
+@keyframes rotate {
+  0%,
+  10% {
+    transform: rotateX(0deg);
+  }
+  90%,
+  100% {
+    transform: rotateX(720deg);
+  }
+}
+
+.panel::before {
+  position: absolute;
+  left: var(--left);
+  content: "Hello World";
+  font-size: 96px;
+  font-family: sans-serif;
+  width: max-content;
+  color: hsl(var(--hue), 75%, 75%);
+}
+
+.panel:nth-child(1) {
+  --left: calc(var(--width) * 0 * -1);
+  --hue: 0;
+  --delay: 0s;
+}
+
+.panel:nth-child(2) {
+  --left: calc(var(--width) * 1 * -1);
+  --hue: 15;
+  --delay: 0.1s;
+}
+
+.panel:nth-child(3) {
+  --left: calc(var(--width) * 2 * -1);
+  --hue: 30;
+  --delay: 0.2s;
+}
+
+.panel:nth-child(4) {
+  --left: calc(var(--width) * 3 * -1);
+  --hue: 45;
+  --delay: 0.3s;
+}
+
+.panel:nth-child(5) {
+  --left: calc(var(--width) * 4 * -1);
+  --hue: 60;
+  --delay: 0.4s;
+}
+.panel:nth-child(6) {
+  --left: calc(var(--width) * (6 - 1) * -1);
+  --hue: 75;
+  --delay: 0.5s;
+}
+
+.panel:nth-child(7) {
+  --left: calc(var(--width) * (7 - 1) * -1);
+  --hue: 90;
+  --delay: 0.6s;
+}
+
+.panel:nth-child(8) {
+  --left: calc(var(--width) * (8 - 1) * -1);
+  --hue: 105;
+  --delay: 0.7s;
+}
+
+.panel:nth-child(9) {
+  --left: calc(var(--width) * (9 - 1) * -1);
+  --hue: 120;
+  --delay: 0.8s;
+}
+
+.panel:nth-child(10) {
+  --left: calc(var(--width) * (10 - 1) * -1);
+  --hue: 135;
+  --delay: 0.9s;
+}
+.panel:nth-child(11) {
+  --left: calc(var(--width) * (11 - 1) * -1);
+  --hue: 150;
+  --delay: 1s;
+}
+
+.panel:nth-child(12) {
+  --left: calc(var(--width) * (12 - 1) * -1);
+  --hue: 165;
+  --delay: 1.2s;
+}
+
+.panel:nth-child(13) {
+  --left: calc(var(--width) * (13 - 1) * -1);
+  --hue: 180;
+  --delay: 1.3s;
+}
+
+.panel:nth-child(14) {
+  --left: calc(var(--width) * (14 - 1) * -1);
+  --hue: 195;
+  --delay: 1.4s;
+}
+
+.panel:nth-child(15) {
+  --left: calc(var(--width) * (15 - 1) * -1);
+  --hue: 210;
+  --delay: 1.5s;
+}
+.panel:nth-child(16) {
+  --left: calc(var(--width) * (16 - 1) * -1);
+  --hue: 225;
+  --delay: 1.6s;
+}
+
+.panel:nth-child(17) {
+  --left: calc(var(--width) * (17 - 1) * -1);
+  --hue: 240;
+  --delay: 1.7s;
+}
+
+.panel:nth-child(18) {
+  --left: calc(var(--width) * (18 - 1) * -1);
+  --hue: 255;
+  --delay: 1.8s;
+}
+
+.panel:nth-child(19) {
+  --left: calc(var(--width) * (19 - 1) * -1);
+  --hue: 270;
+  --delay: 1.9s;
+}
+
+.panel:nth-child(20) {
+  --left: calc(var(--width) * (20 - 1) * -1);
+  --hue: 285;
+  --delay: 2s;
+}
+.panel:nth-child(21) {
+  --left: calc(var(--width) * (21 - 1) * -1);
+  --hue: 300;
+  --delay: 2.1s;
+}
+
+.panel:nth-child(22) {
+  --left: calc(var(--width) * (22 - 1) * -1);
+  --hue: 315;
+  --delay: 2.2s;
+}
+
+.panel:nth-child(23) {
+  --left: calc(var(--width) * (23 - 1) * -1);
+  --hue: 330;
+  --delay: 2.3s;
+}
+
+.panel:nth-child(24) {
+  --left: calc(var(--width) * (24 - 1) * -1);
+  --hue: 345;
+  --delay: 2.4s;
+}
+
+.panel:nth-child(25) {
+  --left: calc(var(--width) * (25 - 1) * -1);
+  --hue: 360;
+  --delay: 2.5s;
+}
