@@ -47,7 +47,8 @@ a {
   min-height: 1.5em;
 }
 
-/* Animation of headline */
+/* Animation of headline - does not work in safari 🤷‍♀️ */
+
 .html-css::after {
   content: "";
   animation: typewriter;
@@ -65,46 +66,51 @@ a {
     content: "";
   }
 
-  10% {
+  8% {
     content: "H";
   }
 
-  20% {
+  19% {
     content: "HT";
   }
 
-  30% {
+  25% {
     content: "HTM";
   }
 
-  40% {
+  36% {
     content: "HTML";
   }
 
-  50% {
+  40% {
     content: "HTML ";
   }
 
-  60% {
+  42% {
     content: "HTML &";
   }
 
-  70% {
+  45% {
     content: "HTML & ";
   }
 
-  80% {
+  58% {
     content: "HTML & C";
   }
 
-  90% {
+  64% {
     content: "HTML & CS";
   }
 
+  70% {
+    content: "HTML & CSS";
+  }
   100% {
     content: "HTML & CSS";
   }
 }
+
+/* End of animation code */
 
 /* Top navigation bar */
 nav {
@@ -188,6 +194,8 @@ main img {
   margin-left: -30px;
 }
 
+/* footer */
+
 footer {
   background-color: var(--footer);
   color: var(--headline);
@@ -196,6 +204,8 @@ footer {
   text-align: right;
   font-size: 10px;
 }
+
+/* When the screen is 450px or less this query will take action */
 
 @media screen and (max-width: 450px) {
   nav ul {
