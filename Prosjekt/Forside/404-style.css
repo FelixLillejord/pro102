@@ -1,0 +1,53 @@
+:root {
+  --background: #232946;
+  --headline: #fffffe;
+  --paragraph: #b8c1ec;
+  --button: #eebbc3;
+  --button-text: #232946;
+  --footer: #121629;
+  --font: "Maven Pro", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* Top navigation*/
+nav {
+  margin: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav img {
+  width: 23px;
+}
+
+nav a {
+  padding: 8px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  color: var(--paragraph);
+}

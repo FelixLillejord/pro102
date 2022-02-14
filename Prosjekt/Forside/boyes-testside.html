@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boyes testside</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <style>
+      h1::after {
+        content: "";
+        animation: typewriter;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        /* Prvents the animation for resetting after it's finished */
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes typewriter {
+        0% {
+          content: "";
+        }
+
+        20% {
+          content: "h";
+        }
+
+        40% {
+          content: "he";
+        }
+
+        60% {
+          content: "hel";
+        }
+
+        80% {
+          content: "hell";
+        }
+
+        100% {
+          content: "hello";
+        }
+      }
+    </style>
+  </body>
+</html>
