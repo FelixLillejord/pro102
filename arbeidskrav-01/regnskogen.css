@@ -9,27 +9,25 @@
   font-size: 18px;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: var(--font);
   text-align: center;
   margin: 0;
-  background-color: var(--background);
 }
 
-img {
-  width: 400px;
-  margin: 0 auto;
-  display: block;
-  max-width: 100%;
+h1,
+h2,
+h3 {
+  color: var(--headline);
 }
 
+p {
+  color: var(--paragraph);
+}
 /* Top navigation bar */
 nav {
-  margin: 20px;
+  padding: 20px;
+  background-color: var(--background);
 }
 
 nav ul {
@@ -52,5 +50,85 @@ nav a {
 
 nav a:hover {
   color: var(--button);
-  text-decoration: dashed;
+  text-decoration: underline;
+}
+
+/* main */
+
+/* Bacground image */
+#rainforest-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+main > p {
+  background-color: var(--background);
+  padding: 30px;
+  /* opacity: 0.85; */
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70vh;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+main > p:first-of-type {
+  margin-top: 20vh;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+p img {
+  width: 100%;
+}
+
+/* First Column */
+.first-column {
+  display: flex;
+  padding: 0%;
+  overflow: hidden;
+  background-color: var(--button-text);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--footer);
+  padding: 20px;
+  margin-top: 50px;
+  text-align: right;
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.5;
+  color: var(--button-text);
+}
+
+/* When the screen is 450px or less this query will take action */
+
+@media screen and (max-width: 450px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li:last-child a {
+    float: left;
+  }
+  nav li {
+    padding: 2px;
+  }
 }
