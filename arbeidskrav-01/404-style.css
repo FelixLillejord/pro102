@@ -1,10 +1,11 @@
 :root {
-  --background: #232946;
-  --headline: #fffffe;
-  --paragraph: #b8c1ec;
-  --button: #eebbc3;
-  --button-text: #232946;
-  --footer: #121629;
+  --background: #fef6e4;
+  --headline: #001858;
+  --paragraph: #172c66;
+  --button: #f582ae;
+  --button-text: #001858;
+  --footer: #f582ae;
+  --button-hoover: #8bd3dd;
   --font: "Maven Pro", sans-serif;
   font-size: 18px;
 }
@@ -14,7 +15,9 @@ html {
 }
 
 body {
-  font-family: var(--font);
+  background-color: var(--background);
+  color: var(--paragraph);
+  font-family: "Maven Pro", sans-serif;
   text-align: center;
   margin: 0;
 }
@@ -28,7 +31,8 @@ img {
 
 /* Top navigation bar */
 nav {
-  margin: 20px;
+  padding: 20px;
+  background-color: white;
 }
 
 nav ul {
@@ -45,10 +49,23 @@ nav img {
 nav a {
   padding: 8px;
   text-decoration: none;
-
+  color: var(--button);
   padding: 14px 16px;
 }
 
 nav a:hover {
-  color: var(--background);
+  color: var(--button-hoover);
+  text-decoration: underline;
+}
+
+/* Color for all paragraphs */
+p {
+  color: var(--paragraph);
+}
+
+/* Color for all headlines ranging from h1-h3 */
+h1,
+h2,
+h3 {
+  color: var(--headline);
 }
