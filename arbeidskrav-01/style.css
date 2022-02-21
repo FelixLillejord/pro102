@@ -1,10 +1,11 @@
 :root {
-  --background: #232946;
-  --headline: #fffffe;
-  --paragraph: #b8c1ec;
-  --button: #eebbc3;
-  --button-text: #232946;
-  --footer: #121629;
+  --background: #fef6e4;
+  --headline: #001858;
+  --paragraph: #172c66;
+  --button: #f582ae;
+  --button-text: #001858;
+  --button-hoover: #8bd3dd;
+  --footer: #f582ae;
   font-size: 18px;
 }
 
@@ -115,7 +116,8 @@ a {
 
 /* Top navigation bar */
 nav {
-  margin: 20px;
+  padding: 20px;
+  background-color: white;
 }
 
 nav ul {
@@ -132,12 +134,13 @@ nav img {
 nav a {
   padding: 8px;
   text-decoration: none;
-
+  color: var(--button);
   padding: 14px 16px;
 }
 
 nav a:hover {
-  color: var(--headline);
+  color: var(--button-hoover);
+  text-decoration: underline;
 }
 
 /* buttons */
