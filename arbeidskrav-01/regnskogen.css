@@ -84,6 +84,7 @@ main > p:first-of-type {
   margin-top: 20vh;
 }
 
+/* Box containing image and a paragraph */
 .two-columns {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -93,14 +94,6 @@ main > p:first-of-type {
 
 p img {
   width: 100%;
-}
-
-/* First Column */
-.first-column {
-  display: flex;
-  padding: 0%;
-  overflow: hidden;
-  background-color: var(--button-text);
 }
 
 /* footer */
