@@ -1,0 +1,53 @@
+:root {
+  --background: #05111f;
+  --headline: #f0f0f1;
+  --paragraph: #8d9fa6;
+  --button: #fff;
+  --button-text: #feffff;
+  --footer: #a1c5e1;
+  --font: "Maven Pro", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--font);
+  text-align: center;
+  margin: 0;
+  background-color: var(--background);
+}
+
+/* Top navigation bar */
+nav {
+  margin: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav img {
+  width: 23px;
+}
+
+nav a {
+  padding: 8px;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: var(--paragraph);
+}
+
+nav a:hover {
+  color: var(--button-text);
+  text-decoration: underline;
+}
+
+/* End top navigation bar */
+
+/* header */
+.header {
+  width: 100%;
+  position: absolute;
+}
