@@ -64,7 +64,7 @@ nav a:hover {
   object-fit: cover;
 }
 
-div.fade {
+div.fade-hero {
   position: absolute;
   bottom: 0;
   height: 50px;
@@ -127,6 +127,16 @@ div.birds {
   background-image: url(/arbeidskrav-01/images/manets.jpeg);
   width: 100%;
   height: 100vh;
+  padding-top: 50px;
+}
+
+div.fade-box {
+  position: absolute;
+  bottom: 0;
+  top: 846px;
+  height: 33px;
+  width: 100%;
+  background: linear-gradient(transparent, #071221);
 }
 
 .two-columns {
