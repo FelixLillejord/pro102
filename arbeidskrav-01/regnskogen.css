@@ -27,7 +27,7 @@ p {
 /* Top navigation bar */
 nav {
   padding: 20px;
-  background-color: var(--background);
+  background: linear-gradient(#000000d9, #00000000);
 }
 
 nav ul {
