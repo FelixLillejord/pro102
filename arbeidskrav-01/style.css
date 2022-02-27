@@ -68,46 +68,49 @@ a {
   }
 
   8% {
-    content: "H";
+    content: "F";
   }
 
   19% {
-    content: "HT";
+    content: "FO";
   }
 
   25% {
-    content: "HTM";
+    content: "FOR";
   }
 
   36% {
-    content: "HTML";
+    content: "FORS";
   }
 
   40% {
-    content: "HTML ";
+    content: "FORSV";
   }
 
   42% {
-    content: "HTML &";
+    content: "FORSVI";
   }
 
   45% {
-    content: "HTML & ";
+    content: "FORSVIN";
   }
 
   58% {
-    content: "HTML & C";
+    content: "FORSVINN";
   }
 
   64% {
-    content: "HTML & CS";
+    content: "FORSVINNE";
   }
 
   70% {
-    content: "HTML & CSS";
+    content: "FORSVINNE!";
+  }
+  75% {
+    content: "FORSVINNE!!";
   }
   100% {
-    content: "HTML & CSS";
+    content: "FORSVINNE!!";
   }
 }
 
