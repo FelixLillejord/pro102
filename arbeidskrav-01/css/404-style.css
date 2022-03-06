@@ -68,3 +68,17 @@ h2,
 h3 {
   color: var(--headline);
 }
+
+/* When the screen is 450px or less this query will take action */
+@media screen and (max-width: 450px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li:last-child a {
+    float: left;
+  }
+  nav li {
+    padding: 2px;
+  }
+}

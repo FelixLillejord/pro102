@@ -12,6 +12,35 @@ html {
   height: 100%;
 }
 
+/* Top navigation bar */
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav img {
+  width: 23px;
+}
+
+nav a {
+  padding: 8px;
+  text-decoration: none;
+  color: var(--button);
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  color: var(--button-hoover);
+  text-decoration: underline;
+}
+/* end of top navigation styling */
+
 body {
   background-color: var(--background);
   color: var(--paragraph);
@@ -49,7 +78,6 @@ a {
 }
 
 /* Animation of headline - does not work in safari 🤷‍♀️ */
-
 .html-css::after {
   content: "";
   animation: typewriter;
@@ -113,38 +141,9 @@ a {
     content: "FORSVINNE!!";
   }
 }
-
 /* End of animation code */
 
-/* Top navigation bar */
-nav {
-  padding: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav img {
-  width: 23px;
-}
-
-nav a {
-  padding: 8px;
-  text-decoration: none;
-  color: var(--button);
-  padding: 14px 16px;
-}
-
-nav a:hover {
-  color: var(--button-hoover);
-  text-decoration: underline;
-}
-
-/* buttons */
+/* button styling */
 
 .link-button {
   font-family: monospace;

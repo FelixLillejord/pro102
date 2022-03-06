@@ -64,14 +64,6 @@ nav a:hover {
   object-fit: cover;
 }
 
-div.fade-hero {
-  position: absolute;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  background: linear-gradient(transparent, var(--background));
-}
-
 /* Horizontal animation */
 div.birds img {
   animation: fly-vertical;
@@ -130,6 +122,16 @@ div.birds {
   padding-top: 50px;
 }
 
+/* div used to create a fade effect between the images */
+div.fade-hero {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(transparent, var(--background));
+}
+
+/* div used to create a fade effect between the images */
 div.fade-box {
   position: absolute;
   bottom: 0;
@@ -139,7 +141,7 @@ div.fade-box {
   background: linear-gradient(transparent, #071221);
 }
 
-.two-columns {
+.box > p {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -152,4 +154,19 @@ div.fade-box {
 
 .two-columns:first-child {
   margin-top: 50px;
+}
+
+/* When the screen is 450px or less this query will take action */
+
+@media screen and (max-width: 450px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li:last-child a {
+    float: left;
+  }
+  nav li {
+    padding: 2px;
+  }
 }

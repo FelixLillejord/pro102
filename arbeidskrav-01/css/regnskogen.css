@@ -68,6 +68,7 @@ nav a:hover {
   opacity: 0.8;
 }
 
+/* styling of all paragraphs in the main section */
 main > p {
   background-color: var(--background);
   padding: 30px;
@@ -79,7 +80,7 @@ main > p {
   border-radius: 10px;
   max-width: 700px;
 }
-
+/* specific editing of the first paragraph */
 main > p:first-of-type {
   margin-top: 20vh;
 }
@@ -92,8 +93,7 @@ main > p:first-of-type {
   column-gap: 20px;
 }
 
-/* Specific editing on the 4th box */
-
+/* Specific editing on the 4th paragraph */
 #king-vulture {
   grid-template-columns: 2fr 3fr;
 }
