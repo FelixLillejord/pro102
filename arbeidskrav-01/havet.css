@@ -124,7 +124,7 @@ div.birds {
   background-color: var(--background);
 }
 .box {
-  background-image: url(/arbeidskrav-01/images/manets.jpeg);
+  background-image: url("/images/manets.jpeg");
   width: 100%;
   height: 100vh;
   padding-top: 50px;
