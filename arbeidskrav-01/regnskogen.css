@@ -92,6 +92,12 @@ main > p:first-of-type {
   column-gap: 20px;
 }
 
+/* Specific editing on the 4th box */
+
+#king-vulture {
+  grid-template-columns: 2fr 3fr;
+}
+
 p img {
   width: 100%;
 }
